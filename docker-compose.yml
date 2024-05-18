@@ -1,0 +1,10 @@
+services:
+  workspace:
+    build: .
+    container_name: data-science-workspace
+    tty: true
+    volumes:
+      - .:/workspace
+    ports:
+      - 8888:8888
+      
